@@ -1,3 +1,18 @@
 ---
 ---
 @charset "utf-8";
+
+$gray-darkest:  #242038;
+$gray-dark:     #37344A;
+$gray:          #49465A;
+$gray-light:    #7A7887;
+$gray-lighter:  #E0E0E4;
+$gray-lightest: #F4F4F6;
+
+$brand-primary: #FF2D55;
+$brand-success: #23CE6B;
+$brand-info:    #8338EC;
+$brand-warning: #FFA400;
+$brand-danger:  #E3170A;
+
+@import "bootstrap/bootstrap";
