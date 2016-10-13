@@ -7,6 +7,8 @@ description: >
   and half roast aftertaste grinder aftertaste.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tocaki.net"
+facebook: tocakinet
+instagram: tocakinet
 
 # Build settings
 markdown: kramdown

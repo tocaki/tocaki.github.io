@@ -1,7 +1,16 @@
-<h2>Tocaki</h2>
-<p>&copy; 2016 Tocaki [<a href="mailto: {{ site.email }}">{{ site.email }}</a>]</p>
-
-<p>
-  Facebook
-  Instagram
-</p>
+<footer class="bg-inverse p-y-3">
+  <div class="container">
+    <h2>{{ site.title }}</h2>
+    <p>&copy; 2016 {{ site.title }} [<a href="mailto: {{ site.email }}">{{ site.email }}</a>]</p>
+    <p class="h3">
+      <a href="{{ site.facebook | prepend: "https://facebook.com/" }}" target="_blank" class="text-deco-none">
+        {% include icon.html i="facebook-fill" %}
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="{{ site.instagram | prepend: "https://instagram.com/" }}" target="_blank" class="text-deco-none">
+        {% include icon.html i="instagram-fill" %}
+        <span class="sr-only">Instagram</span>
+      </a>
+    </p>
+  </div>
+</footer>
