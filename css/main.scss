@@ -15,4 +15,26 @@ $brand-info:    #8338EC;
 $brand-warning: #FFA400;
 $brand-danger:  #E3170A;
 
+$navbar-brand-padding-y: 0;
+
 @import "bootstrap/bootstrap";
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &.tocaki-fill {
+    width: 1.0986328125em;
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  line-height: 1;
+}
