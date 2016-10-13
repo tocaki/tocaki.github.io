@@ -11,3 +11,7 @@ url: "http://tocaki.net"
 # Build settings
 markdown: kramdown
 permalink: pretty
+collections:
+  artists:
+    output: true
+    permalink: /:path/
