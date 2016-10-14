@@ -51,6 +51,9 @@ $navbar-brand-padding-y: 0;
 
 $headings-font-weight: 300;
 
+$card-border-radius: 9px;
+
+@import "genres";
 @import "bootstrap/bootstrap";
 
 body {
@@ -113,4 +116,41 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.filter-card .list-group-item {
+  border-right: 0;
+  border-left: 0;
+
+  &:first-child { border-top:    0; }
+  &:last-child  { border-bottom: 0; }
+}
+
+.artist-card { position: relative; }
+.artist-card-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba($gray-lightest, .7);
+  color: $gray-dark;
+}
+.artist-card-img {
+  border-radius: $card-border-radius;
+}
+.artist-card-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.25rem;
+  line-height: .75;
+  padding: .5rem;
+  border-radius: 1.25rem;
+  color: white;
+
+  .icon {
+    margin-right: .25rem;
+
+    &:last-child { margin-right: 0; }
+  }
 }
