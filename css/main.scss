@@ -15,6 +15,38 @@ $brand-info:    #8338EC;
 $brand-warning: #FFA400;
 $brand-danger:  #E3170A;
 
+$spacer:   1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  5: (
+    x: ($spacer-x * 5),
+    y: ($spacer-y * 5)
+  ),
+  7: (
+    x: ($spacer-x * 7),
+    y: ($spacer-y * 7)
+  )
+);
+
+$display1-size: 10rem;
+
 $navbar-brand-padding-y: 0;
 
 $headings-font-weight: 300;
@@ -48,13 +80,15 @@ body {
 }
 
 .hero {
-  padding-top: $spacer * 5;
-  padding-bottom: $spacer * 5;
   background-image:
-    linear-gradient(rgba($gray-dark, .7), rgba($gray-dark, .7)),
+    linear-gradient(rgba($gray-lightest, .24), rgba($gray-lightest, .24)),
     url("/images/bg.jpg");
-  background-position: center;
-  background-size: cover;
+}
+
+.site-footer {
+  background-image:
+    linear-gradient(rgba($gray-dark, .8), rgba($gray-dark, .8)),
+    url("/images/bg2.jpg");
 }
 
 .navbar-absolute {
@@ -74,3 +108,9 @@ body {
 .bb-1 { border-bottom: $border-width solid; }
 .bb-2 { border-bottom: $border-width * 2 solid; }
 .bb-3 { border-bottom: $border-width * 3 solid; }
+
+.bg-cover-fixed {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
