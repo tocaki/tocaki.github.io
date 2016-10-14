@@ -34,9 +34,30 @@ $navbar-brand-padding-y: 0;
   }
 }
 
+.hero {
+  padding-top: $spacer * 5;
+  padding-bottom: $spacer * 5;
+  background-image:
+    linear-gradient(rgba($gray-dark, .7), rgba($gray-dark, .7)),
+    url("/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .navbar-brand {
   font-size: 2rem;
   line-height: 1;
 }
 
 .text-deco-none { text-decoration: none !important; }
+
+.bb-1 { border-bottom: $border-width solid; }
+.bb-2 { border-bottom: $border-width * 2 solid; }
+.bb-3 { border-bottom: $border-width * 3 solid; }
