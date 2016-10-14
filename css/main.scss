@@ -17,7 +17,13 @@ $brand-danger:  #E3170A;
 
 $navbar-brand-padding-y: 0;
 
+$headings-font-weight: 300;
+
 @import "bootstrap/bootstrap";
+
+body {
+  font-weight: 300;
+}
 
 .icon {
   display: inline-block;
@@ -31,6 +37,13 @@ $navbar-brand-padding-y: 0;
 
   &.tocaki-fill {
     width: 1.0986328125em;
+  }
+
+  .display-1 &,
+  .display-2 &,
+  .display-3 &,
+  .display-4 & {
+    top: 0;
   }
 }
 
