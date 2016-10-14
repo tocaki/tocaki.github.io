@@ -1,0 +1,12 @@
+<div class="artist-card">
+  <a href="{{ artist.url }}">
+    <img class="artist-card-img img-fluid" src="{{ artist.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ artist.name }}">
+    <span class="artist-card-name text-xs-center m-b-0 p-y-1">{{ artist.name }}</span>
+  </a>
+  <span class="artist-card-badge bg-genre-1">
+    {% include icon.html i="phone" %}
+    {% include icon.html i="email" %}
+    {% include icon.html i="facebook" %}
+    {% include icon.html i="twitter" %}
+  </span>
+</div>
