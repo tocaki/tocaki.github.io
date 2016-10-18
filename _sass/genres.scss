@@ -1,12 +1,11 @@
 $genres: (
-  1: $brand-info,
-  2: $brand-success,
-  3: $brand-warning,
-  4: $brand-danger,
-  5: $gray
+  rock:   $brand-info,
+  metal:  $brand-success,
+  samba:  $brand-warning,
+  pagode: $brand-danger
 );
 
-@each $id, $color in $genres {
-  .text-genre-#{$id} { color:      $color; }
-  .bg-genre-#{$id}   { background: $color; }
+@each $name, $color in $genres {
+  .text-genre-#{$name} { color:      $color; }
+  .bg-genre-#{$name}   { background: $color; }
 }
