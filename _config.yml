@@ -17,3 +17,10 @@ collections:
   artists:
     output: true
     permalink: /:path/
+defaults:
+  -
+    scope:
+      path: ""
+      type: artists
+    values:
+      layout: profile
