@@ -3,22 +3,31 @@
   {% assign title = page.name | append: " | Tocaki" %}
   {% include head.html title=title %}
 
-  <body>
+  <body class="artist-profile">
     {% include header.html %}
 
     <div class="p-y-3">
       <div class="container">
-        <div class="text-xs-center m-b-2">
-          <img src="{{ page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ page.name }}" class="img-fluid img-circle m-x-auto m-b-1">
-          <h1>{{ page.name }}</h1>
-          <p class="lead text-muted">
-            <span class="text-primary">{% include icon.html i="marker" %}</span> {{ page.city }}
-          </p>
-          <p>
-            <a href="{{ page.email | prepend: "mailto: " }}" class="btn btn-primary">
-              <span class="m-r-1">{% include icon.html i="email-fill" %}</span>Enviar mensagem
-            </a>
-          </p>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{{ page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ page.name }}" class="img-fluid img-circle m-x-auto m-b-1">
+          </div>
+          <div class="col-md-9">
+            <h1 class="display-2 artist-profile-name">{{ page.name }}</h1>
+            <p class="h2 text-muted m-b-2 artist-profile-city">
+              <span class="text-primary">{% include icon.html i="marker" %}</span> {{ page.city }}
+            </p>
+            <p>
+              <a href="{{ page.email | prepend: "mailto: " }}" class="btn btn-lg btn-primary pull-xs-left">
+                <span class="m-r-1">{% include icon.html i="email-fill" %}</span>Enviar mensagem
+              </a>
+              <div class="btn-group btn-group-lg pull-xs-right" role="group">
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="facebook" %}</a>
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="twitter" %}</a>
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="google-plus" %}</a>
+              </div>
+            </p>
+          </div>
         </div>
 
         <hr>
@@ -58,6 +67,7 @@
         </div>
       </div>
     </div>
+
     {% include footer.html %}
   </body>
 </html>
