@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  {% assign title = page.name | append: " | Tocaki" %}
+  {% include head.html title=title %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="p-y-3">
+      <div class="container">
+        <div class="text-xs-center m-b-2">
+          <img src="{{ page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ page.name }}" class="img-fluid img-circle m-x-auto m-b-1">
+          <h1>{{ page.name }}</h1>
+          <p class="lead text-muted">
+            <span class="text-primary">{% include icon.html i="marker" %}</span> {{ page.city }}
+          </p>
+          <p>
+            <a href="{{ page.email | prepend: "mailto: " }}" class="btn btn-primary">
+              <span class="m-r-1">{% include icon.html i="email-fill" %}</span>Enviar mensagem
+            </a>
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="row p-y-1">
+          <div class="col-md-8">{{ content }}</div>
+          <div class="col-md-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <span class="m-r-1">{% include icon.html i="music" %}</span>Ouça {{ page.name }}
+              </a>
+              <a href="{{ page.email | prepend: "mailto: " }}" class="list-group-item">
+                <span class="m-r-1">{% include icon.html i="email" %}</span>{{ page.email }}
+              </a>
+              {% if page.phone %}
+                <a href="#" class="list-group-item">
+                  <span class="m-r-1">{% include icon.html i="phone" %}</span>Ligue para {{ page.phone }}
+                </a>
+              {% endif %}
+              {% if page.facebook %}
+                <a href="#" class="list-group-item">
+                  <span class="m-r-1">{% include icon.html i="facebook" %}</span>Facebook
+                </a>
+              {% endif %}
+              {% if page.twitter %}
+                <a href="#" class="list-group-item">
+                  <span class="m-r-1">{% include icon.html i="twitter" %}</span>Twitter
+                </a>
+              {% endif %}
+              {% if page.gplus %}
+                <a href="#" class="list-group-item">
+                  <span class="m-r-1">{% include icon.html i="google-plus" %}</span>Google +
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
