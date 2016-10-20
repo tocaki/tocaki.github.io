@@ -36,29 +36,29 @@
           <div class="col-md-8">{{ content }}</div>
           <div class="col-md-4">
             <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active">
+              <a href="{{ page.portfolio }}" target="_blank" class="list-group-item list-group-item-action active">
                 <span class="m-r-1">{% include icon.html i="music" %}</span>Ouça {{ page.name }}
               </a>
               <a href="{{ page.email | prepend: "mailto: " }}" class="list-group-item">
                 <span class="m-r-1">{% include icon.html i="email" %}</span>{{ page.email }}
               </a>
               {% if page.phone %}
-                <a href="#" class="list-group-item">
+                <a href="{{ page.phone }}" class="list-group-item">
                   <span class="m-r-1">{% include icon.html i="phone" %}</span>Ligue para {{ page.phone }}
                 </a>
               {% endif %}
               {% if page.facebook %}
-                <a href="#" class="list-group-item">
+                <a href="{{ page.facebook | prepend: "https://facebook.com/" }}" target="_blank" class="list-group-item">
                   <span class="m-r-1">{% include icon.html i="facebook" %}</span>Facebook
                 </a>
               {% endif %}
               {% if page.twitter %}
-                <a href="#" class="list-group-item">
+                <a href="{{ page.twitter | prepend: "https://twitter.com/" }}" target="_blank" class="list-group-item">
                   <span class="m-r-1">{% include icon.html i="twitter" %}</span>Twitter
                 </a>
               {% endif %}
               {% if page.gplus %}
-                <a href="#" class="list-group-item">
+                <a href="{{ page.gplus | prepend: "https://plus.google.com/" }}" target="_blank" class="list-group-item">
                   <span class="m-r-1">{% include icon.html i="google-plus" %}</span>Google +
                 </a>
               {% endif %}

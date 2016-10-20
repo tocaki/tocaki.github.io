@@ -5,10 +5,12 @@ description: >
   Pumpkin spice black, french press bar seasonal id coffee.
   Whipped carajillo french press doppio at latte extra half
   and half roast aftertaste grinder aftertaste.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "http://tocaki.net"
 facebook: tocakinet
 instagram: tocakinet
+blogurl: ""
+subscriptionurl: ""
 
 # Build settings
 markdown: kramdown
