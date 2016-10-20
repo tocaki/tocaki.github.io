@@ -17,6 +17,8 @@ collections:
   artists:
     output: true
     permalink: /:path/
+  genres:
+    output: false
 defaults:
   -
     scope:

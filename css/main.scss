@@ -53,7 +53,7 @@ $headings-font-weight: 300;
 
 $card-border-radius: 9px;
 
-@import "genres";
+{% include genres.scss %}
 @import "bootstrap/bootstrap";
 
 body {
