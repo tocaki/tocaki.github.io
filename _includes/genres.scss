@@ -1,0 +1,4 @@
+{% for genre in site.genres %}
+.text-genre-{{ genre.slug }} { color: {{ genre.color }}; }
+.bg-genre-{{ genre.slug }}   { background: {{ genre.color }}; }
+{% endfor %}
