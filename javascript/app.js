@@ -1,52 +1,53 @@
 $(function() {
-  var artistsFilter = {
-    types: [],
-    cities: [],
-    genres: []
+  var FILTERS = {
+    types:  new ArtistFilter('types', 'type'),
+    cities: new ArtistFilter('cities', 'city'),
+    genres: new ArtistFilter('genres', 'genre')
   };
 
-  function $filterCard(name) {
-    return $('input:checkbox[name="' + name + '[]"]');
+  var $artists = $('.artist-card');
+
+  function ArtistFilter(inputName, dataName) {
+    this.inputName = inputName;
+    this.dataName = dataName;
+    this.values = [];
+
+    this.$inputs = $('input:checkbox[name="' + this.inputName + '[]"]');
   }
 
-  function filter($filterCard, filter) {
-    return function() {
-      artistsFilter[filter] = $filterCard
+  ArtistFilter.filter = function ($artists) {
+    $artists.each(function() {
+      var $artist = $(this);
+      var tests = [];
+
+      $.each(FILTERS, function (k, v) { tests.push(v.test($artist)); })
+
+      if (tests.indexOf(false) === -1) {
+        $artist.stop().fadeIn(100);
+      } else {
+        $artist.stop().fadeOut(100);
+      }
+    });
+  };
+
+  ArtistFilter.prototype.setupFilter = function () {
+    var filter = this;
+
+    filter.$inputs.on('change', function () {
+      filter.values = filter.$inputs
         .filter(':checked')
         .map(function () {
           return this.value;
         })
         .get();
 
-      filterArtists($('.artist-card'));
-    }
-  }
-
-  function passFilter(filter, value) {
-    return artistsFilter[filter].indexOf(value) !== -1 || artistsFilter[filter].length === 0;
-  }
-
-  function filterArtists(artists) {
-    artists.each(function() {
-      var $this = $(this);
-
-      if (
-        passFilter('types', $this.data('type')) &&
-        passFilter('cities', $this.data('city')) &&
-        passFilter('genres', $this.data('genre'))
-      ) {
-        $this.stop().fadeIn(100);
-      } else {
-        $this.stop().fadeOut(100);
-      }
+      ArtistFilter.filter($artists);
     });
-  }
+  };
 
-  var $types = $filterCard('types');
-  var $cities = $filterCard('cities');
-  var $genres = $filterCard('genres');
+  ArtistFilter.prototype.test = function ($artist) {
+    return this.values.indexOf($artist.data(this.dataName)) !== -1 || this.values.length === 0;
+  };
 
-  $types.change(filter($types, 'types'));
-  $cities.change(filter($cities, 'cities'));
-  $genres.change(filter($genres, 'genres'));
+  $.each(FILTERS, function (k, v) { v.setupFilter(); });
 });
