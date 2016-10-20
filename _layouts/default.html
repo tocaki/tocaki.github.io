@@ -8,5 +8,6 @@
     {{ content }}
 
     {% include footer.html %}
+    {% if site.ga %}{% include analytics.html %}{% endif %}
   </body>
 </html>
