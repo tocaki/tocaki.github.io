@@ -18,7 +18,7 @@
               <span class="text-primary">{% include icon.html i="marker" %}</span> {{ page.city }}
             </p>
             <p>
-              <a href="{{ page.email | prepend: "mailto: " }}" class="btn btn-lg btn-primary pull-xs-left">
+              <a href="{{ page.email | prepend: "mailto:" }}" class="btn btn-lg btn-primary pull-xs-left">
                 <span class="m-r-1">{% include icon.html i="email-fill" %}</span>Enviar mensagem
               </a>
               <div class="btn-group btn-group-lg pull-xs-right" role="group">
@@ -39,11 +39,11 @@
               <a href="{{ page.portfolio }}" target="_blank" class="list-group-item list-group-item-action active">
                 <span class="m-r-1">{% include icon.html i="music" %}</span>Ouça {{ page.name }}
               </a>
-              <a href="{{ page.email | prepend: "mailto: " }}" class="list-group-item">
+              <a href="{{ page.email | prepend: "mailto:" }}" class="list-group-item">
                 <span class="m-r-1">{% include icon.html i="email" %}</span>{{ page.email }}
               </a>
               {% if page.phone %}
-                <a href="{{ page.phone }}" class="list-group-item">
+                <a href="{{ page.phone | prepend: "tel://" }}" class="list-group-item">
                   <span class="m-r-1">{% include icon.html i="phone" %}</span>Ligue para {{ page.phone }}
                 </a>
               {% endif %}
