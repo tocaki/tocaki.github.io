@@ -5,14 +5,14 @@ lead: Encontre o melhor para o seu evento.
 ---
 
 <p class="pull-xs-right p-a-1">
-  <a href="#" class="btn btn-primary">Blog</a>
+  <a href="{{ site.blogurl }}" class="btn btn-primary">Blog</a>
 </p>
 
 <div class="hero p-y-7 bg-cover-fixed text-primary text-xs-center">
   <p class="display-1"><span class="p-x-2 bb-2">{% include tocaki-logo.html %}</span></p>
   <p class="h3 m-b-2">{{ page.lead }}</p>
   <p>
-    <a href="#" class="btn btn-lg btn-outline-primary">{{ page.button }}</a>
+    <a href="{{ "/artistas" | prepend: site.baseurl }}" class="btn btn-lg btn-outline-primary">{{ page.button }}</a>
   </p>
 </div>
 
@@ -33,7 +33,7 @@ lead: Encontre o melhor para o seu evento.
       </div>
       <div class="col-md-6">
         <p>
-          <a href="#" class="btn btn-block btn-info btn-lg">{% include icon.html i="music" %} Quero participar!</a>
+          <a href="{{ site.subscriptionurl }}" class="btn btn-block btn-info btn-lg">{% include icon.html i="music" %} Quero participar!</a>
         </p>
       </div>
     </div>
