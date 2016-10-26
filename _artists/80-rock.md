@@ -1,5 +1,5 @@
 ---
-name: 80 Rock
+title: 80 Rock
 image: '/images/artists/80-rock.jpg'
 city: 'Sabará, MG'
 type: Banda

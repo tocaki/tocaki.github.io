@@ -6,10 +6,10 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-3 text-primary">
-        <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.name }}" class="artist-profile-img img-fluid img-thumbnail img-circle m-x-auto m-b-1">
+        <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" class="artist-profile-img img-fluid img-thumbnail img-circle m-x-auto m-b-1">
       </div>
       <div class="col-md-9">
-        <h1 class="display-2 artist-profile-name">{{ page.name }}</h1>
+        <h1 class="display-2 artist-profile-name">{{ page.title }}</h1>
         <p class="h2 text-muted m-b-2 artist-profile-city">
           <span class="text-primary">{% include icon.html i="marker" %}</span> {{ page.city }}
         </p>
@@ -33,7 +33,7 @@ layout: default
       <div class="col-md-4">
         <div class="list-group">
           <a href="{{ page.portfolio }}" target="_blank" class="list-group-item list-group-item-action active">
-            <span class="m-r-1">{% include icon.html i="music" %}</span>Ouça {{ page.name }}
+            <span class="m-r-1">{% include icon.html i="music" %}</span>Ouça {{ page.title }}
           </a>
           <a href="{{ page.email | prepend: "mailto:" }}" class="list-group-item">
             <span class="m-r-1">{% include icon.html i="email" %}</span>{{ page.email }}

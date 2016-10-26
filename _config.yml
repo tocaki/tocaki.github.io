@@ -58,10 +58,10 @@ prose:
           element: textarea
           label: Sobre
     _artists:
-      - name: name
+      - name: title
         field:
           element: text
-          label: Nome
+          label: title
       - name: image
         field:
           element: select
