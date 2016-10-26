@@ -55,7 +55,7 @@ prose:
           label: Texto do banner
       - name: about
         field:
-          name: textarea
+          element: textarea
           label: Sobre
     _artists:
       - name: name
