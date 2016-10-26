@@ -3,18 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if page.title %}
-    {% assign title = page.title | append: " | Tocaki" %}
+  {% if page.layout == 'profile' %}
+    <title>{{ page.name | append: ' | ' | append: site.title | escape }}</title>
   {% else %}
-    {% assign title = site.title %}
+    <title>{{ page.title | default: site.title | escape }}</title>
   {% endif %}
-  <title>{{ title | escape }}</title>
 
-  {% if page.description %}
-    {% assign description = page.description %}
-  {% else %}
-    {% assign description = site.description %}
-  {% endif %}
+  {% assign description = page.description | default: site.description %}
   <meta name="description" content="{{ description }}">
 
   {% if page.layout == "profile" %}
