@@ -3,13 +3,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ include.title | escape }}</title>
-  <meta name="description" content="{{ include.description }}">
+  {% if page.title %}
+    {% assign title = page.title | append: " | Tocaki" %}
+  {% else %}
+    {% assign title = site.title %}
+  {% endif %}
+  <title>{{ title | escape }}</title>
+
+  {% if page.description %}
+    {% assign description = page.description %}
+  {% else %}
+    {% assign description = site.description %}
+  {% endif %}
+  <meta name="description" content="{{ description }}">
 
   {% if page.layout == "profile" %}
     {% assign image = page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl | prepend: site.url %}
     {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
-    {% include seo/twitter-card.html title=page.name description=include.description image=image %}
+    {% include seo/twitter-card.html title=page.name description=description image=image %}
     {% include seo/open-graph.html title=page.name url=url image=image %}
   {% endif %}
 

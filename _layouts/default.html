@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  {% include head.html title=site.title description=site.description %}
+  {% include head.html %}
 
-  <body>
+  <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
     {% include header.html %}
 
     {{ content }}
