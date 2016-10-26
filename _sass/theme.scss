@@ -1,0 +1,25 @@
+.hero {
+  background-image:
+    linear-gradient(rgba($gray-lightest, .24), rgba($gray-lightest, .24)),
+    url("/images/bg.jpg");
+}
+
+.site-footer {
+  background-image:
+    linear-gradient(rgba($gray-dark, .8), rgba($gray-dark, .8)),
+    url("/images/bg2.jpg");
+}
+
+.navbar-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar-brand {
+  float: none;
+  margin-right: 0;
+  font-size: 3.5rem;
+  line-height: 1;
+}

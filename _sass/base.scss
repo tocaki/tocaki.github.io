@@ -1,0 +1,25 @@
+body {
+  font-weight: 300;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &.tocaki-fill {
+    width: 1.0986328125em;
+  }
+
+  .display-1 &,
+  .display-2 &,
+  .display-3 &,
+  .display-4 & {
+    top: 0;
+  }
+}

@@ -1,0 +1,34 @@
+.artist-card {
+  position: relative;
+  margin-bottom: $grid-gutter-width;
+}
+
+.artist-card-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba($gray-lightest, .7);
+  color: $gray-dark;
+}
+
+.artist-card-img {
+  border-radius: $card-border-radius;
+}
+
+.artist-card-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.25rem;
+  line-height: .75;
+  padding: .75rem;
+  border-radius: 1.25rem;
+  color: white;
+
+  .icon {
+    margin-right: .25rem;
+
+    &:last-child { margin-right: 0; }
+  }
+}
