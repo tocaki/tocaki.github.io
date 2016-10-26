@@ -67,14 +67,17 @@ prose:
         field:
           element: text
           label: Telefone
+          help: Opcional
       - name: facebook
         field:
           element: text
           label: Nome de usuário do Facebook
+          help: Opcional
       - name: twitter
         field:
           element: text
           label: Nome de usuário do Twitter
+          help: Opcional
       - name: gplus
         field:
           element: text
