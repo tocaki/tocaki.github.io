@@ -46,7 +46,8 @@ prose:
           label: Nome
       - name: city
         field:
-          element: text
+          element: select
+          options: 'http://tocaki.net/jsonp/cities.jsonp'
           label: Cidade
       - name: type
         field:
@@ -57,7 +58,8 @@ prose:
             - Solo
       - name: genre
         field:
-          element: text
+          element: select
+          options: 'http://tocaki.net/jsonp/genres.jsonp'
           label: Gênero
       - name: portfolio
         field:
