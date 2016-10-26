@@ -2,7 +2,7 @@
 {% assign genre = site.data.genres | where: 'title', artist.genre | first %}
 <div class="artist-card" data-genre="{{ genre.title }}" data-city="{{ artist.city }}" data-type="{{ artist.type }}">
   <a href="{{ artist.url }}">
-    <img class="artist-card-img img-fluid" src="{{ artist.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ artist.name }}">
+    <img class="artist-card-img img-fluid" src="{{ artist.image | prepend: site.baseurl }}" alt="{{ artist.name }}">
     <span class="artist-card-name text-xs-center m-b-0 p-y-1">{{ artist.name }}</span>
   </a>
   <span class="artist-card-badge {{ genre.title | slugify | prepend: "bg-genre-" }}">

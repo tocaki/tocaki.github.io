@@ -13,7 +13,7 @@
   <meta name="description" content="{{ description }}">
 
   {% if page.layout == "profile" %}
-    {% assign image = page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl | prepend: site.url %}
+    {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
     {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
     {% include seo/twitter-card.html title=page.name description=description image=image %}
     {% include seo/open-graph.html title=page.name url=url image=image %}

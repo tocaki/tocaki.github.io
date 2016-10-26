@@ -6,7 +6,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-3 text-primary">
-        <img src="{{ page.slug | append: ".jpg" | prepend: "/images/artists/" | prepend: site.baseurl }}" alt="{{ page.name }}" class="artist-profile-img img-fluid img-thumbnail img-circle m-x-auto m-b-1">
+        <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.name }}" class="artist-profile-img img-fluid img-thumbnail img-circle m-x-auto m-b-1">
       </div>
       <div class="col-md-9">
         <h1 class="display-2 artist-profile-name">{{ page.name }}</h1>
