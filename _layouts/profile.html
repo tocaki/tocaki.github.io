@@ -17,11 +17,19 @@ layout: default
           <a href="{{ page.email | prepend: "mailto:" }}" class="btn btn-lg btn-primary pull-xs-left">
             <span class="m-r-1">{% include icon.html i="email-fill" %}</span>Enviar mensagem
           </a>
-          <div class="btn-group btn-group-lg pull-xs-right" role="group">
-            <a href="#" class="btn btn-outline-primary">{% include icon.html i="facebook" %}</a>
-            <a href="#" class="btn btn-outline-primary">{% include icon.html i="twitter" %}</a>
-            <a href="#" class="btn btn-outline-primary">{% include icon.html i="google-plus" %}</a>
-          </div>
+          {% if page.facebook or page.twitter or page.gplus %}
+            <div class="btn-group btn-group-lg pull-xs-right" role="group">
+              {% if page.facebook %}
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="facebook" %}</a>
+              {% endif %}
+              {% if page.twitter %}
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="twitter" %}</a>
+              {% endif %}
+              {% if page.gplus %}
+                <a href="#" class="btn btn-outline-primary">{% include icon.html i="google-plus" %}</a>
+              {% endif %}
+            </div>
+          {% endif %}
         </p>
       </div>
     </div>
