@@ -1,9 +1,10 @@
 ---
 name: 80 Rock
-city: Sabará, MG
+image: '/images/artists/80-rock.jpg'
+city: 'Sabará, MG'
 type: Banda
 genre: Rock
-portfolio: https://youtu.be/qzXQ1c6ciZI
+portfolio: 'https://youtu.be/qzXQ1c6ciZI'
 twitter: banda80rock
 facebook: banda80rock
 email: banda80rock@gmail.com
