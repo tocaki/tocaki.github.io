@@ -28,3 +28,44 @@ defaults:
       type: artists
     values:
       layout: profile
+
+# Prose
+prose:
+  ignore:
+    - /_layouts
+    - /_includes
+  metadata:
+    _artists:
+      - name: name
+        field:
+          element: text
+      - name: city
+        field:
+          element: text
+      - name: type
+        field:
+          element: text
+      - name: genre
+        field:
+          element: text
+      - name: portfolio
+        field:
+          element: text
+      - name: email
+        field:
+          element: text
+      - name: phone
+        field:
+          element: text
+      - name: facebook
+        field:
+          element: text
+          label: Facebook username
+      - name: twitter
+        field:
+          element: text
+          label: Twitter username
+      - name: gplus
+        field:
+          element: text
+          label: Google+ username
