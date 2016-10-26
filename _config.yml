@@ -19,8 +19,6 @@ collections:
   artists:
     output: true
     permalink: /:path/
-  genres:
-    output: false
 defaults:
   -
     scope:
@@ -34,6 +32,12 @@ prose:
   ignore:
     - /_layouts
     - /_includes
+    - /_sass
+    - /css
+    - /javascript
+    - .gitignore
+    - CNAME
+    - favicon.ico
   metadata:
     _artists:
       - name: name

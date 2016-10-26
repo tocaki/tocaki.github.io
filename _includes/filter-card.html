@@ -6,7 +6,7 @@
       </h3>
     </li>
     {% for item in include.items %}
-      {% if include.items == site.genres %}
+      {% if include.items == site.data.genres %}
         {% assign value = item.title %}
       {% else %}
         {% assign value = item %}
@@ -16,8 +16,8 @@
           <input type="checkbox" name="{{ include.name | append: "[]" }}" value="{{ value }}" class="custom-control-input">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">
-            {% if include.items == site.genres %}
-              <span class="pull-xs-right {{ item.slug | prepend: "text-genre-" }}">
+            {% if include.items == site.data.genres %}
+              <span class="pull-xs-right {{ item.title | slugify | prepend: "text-genre-" }}">
                 {% include icon.html i="music" %}
               </span>
             {% endif %}
