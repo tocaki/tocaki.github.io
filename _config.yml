@@ -31,14 +31,13 @@ defaults:
 # Prose
 prose:
   ignore:
-    - /_layouts
-    - /_includes
-    - /_sass
-    - /css
-    - /javascript
-    - .gitignore
-    - CNAME
-    - favicon.ico
+    - /*
+    - !/_artists
+    - !/_data
+    - !/images
+    - !_config.yml
+    - !artistas.html
+    - !index.html
   metadata:
     index.html:
       - name: layout
