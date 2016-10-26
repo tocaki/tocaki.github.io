@@ -4,8 +4,8 @@
 genres([
 {% for genre in site.data.genres %}
   {
-    "name": "{{ genre.title }}",
-    "value": "{{ genre.title }}"
+    "name": "{{ genre }}",
+    "value": "{{ genre }}"
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ])
