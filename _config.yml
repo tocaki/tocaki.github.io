@@ -62,6 +62,11 @@ prose:
         field:
           element: text
           label: Nome
+      - name: image
+        field:
+          element: select
+          options: 'http://tocaki.net/jsonp/avatars.jsonp?callback=avatars'
+          label: Imagem
       - name: city
         field:
           element: select
