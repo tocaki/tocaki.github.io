@@ -1,0 +1,11 @@
+---
+---
+
+callback([
+{% for city in site.data.cities %}
+  {
+    "name": "{{ city }}",
+    "value": "{{ city }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+])
