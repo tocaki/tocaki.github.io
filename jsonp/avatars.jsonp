@@ -1,0 +1,11 @@
+---
+---
+{% capture json %}{% for file in site.static_files %}{% if file.path contains '/images/artists' %}
+  {
+    "path": "{{ file.path }}",
+    "name": "{{ file.name }}"
+  },
+{% endif %}{% endfor %}{% endcapture %}
+avatars([
+  {{ json | strip | split: ',' | join: ',' }}
+])
