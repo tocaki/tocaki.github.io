@@ -27,6 +27,13 @@ defaults:
       type: artists
     values:
       layout: profile
+      appendtitle: true
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      image: '/images/cover.jpg'
 
 # Prose
 prose:

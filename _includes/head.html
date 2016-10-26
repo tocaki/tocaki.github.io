@@ -3,21 +3,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if page.layout == 'profile' %}
-    <title>{{ page.title | append: ' | ' | append: site.title | escape }}</title>
-  {% else %}
-    <title>{{ page.title | default: site.title | escape }}</title>
-  {% endif %}
-
+  {% if page.appendtitle %}{% assign title = page.title | append: ' | ' | append: site.title | escape %}
+  {% else %}{% assign title = page.title | default: site.title | escape %}{% endif %}
   {% assign description = page.description | default: site.description %}
+
+  <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
 
-  {% if page.layout == "profile" %}
-    {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
-    {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
-    {% include seo/twitter-card.html title=page.title description=description image=image %}
-    {% include seo/open-graph.html title=page.title url=url image=image %}
-  {% endif %}
+  {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
+  {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
+  {% include seo/twitter-card.html title=title description=description image=image %}
+  {% include seo/open-graph.html title=title url=url image=image %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <script src="{{ "/javascript/jquery.min.js" | prepend: site.baseurl }}"></script>
