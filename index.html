@@ -1,7 +1,12 @@
 ---
 layout: default
-button: Busque entre mais de 40 profissionais
-lead: Encontre o melhor para o seu evento.
+banner_button: Busque entre mais de 40 profissionais
+banner_lead: Encontre o melhor para o seu evento.
+about: >
+  Tocaki é uma plataforma que acredita nos artistas e
+  busca oferecer as oportunidades que eles merecem. O nosso
+  objetivo é auxiliar na divulgação dos artistas que precisam,
+  de forma moderna, funcional e inovadora!
 ---
 
 <p class="pull-xs-right p-a-1">
@@ -10,9 +15,9 @@ lead: Encontre o melhor para o seu evento.
 
 <div class="hero p-y-7 bg-cover-fixed text-primary text-xs-center">
   <p class="display-1"><span class="p-x-2 bb-2">{% include tocaki-logo.html %}</span></p>
-  <p class="h3 m-b-2">{{ page.lead }}</p>
+  <p class="h3 m-b-2">{{ page.banner_lead }}</p>
   <p>
-    <a href="{{ "/artistas" | prepend: site.baseurl }}" class="btn btn-lg btn-outline-primary">{{ page.button }}</a>
+    <a href="{{ "/artistas" | prepend: site.baseurl }}" class="btn btn-lg btn-outline-primary">{{ page.banner_button }}</a>
   </p>
 </div>
 
@@ -27,9 +32,7 @@ lead: Encontre o melhor para o seu evento.
 
     <div class="row">
       <div class="col-md-6">
-        <p class="lead">
-          Tocaki é uma plataforma que acredita nos artistas e busca oferecer as oportunidades que eles merecem. O nosso objetivo é auxiliar na divulgação dos artistas que precisam, de forma moderna, funcional e inovadora!
-        </p>
+        <p class="lead">{{ page.about }}</p>
       </div>
       <div class="col-md-6">
         <p>

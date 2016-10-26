@@ -40,6 +40,23 @@ prose:
     - CNAME
     - favicon.ico
   metadata:
+    index.html:
+      - name: layout
+        field:
+          element: hidden
+          value: default
+      - name: banner_button
+        field:
+          element: text
+          label: Botão do banner
+      - name: banner_lead
+        field:
+          element: text
+          label: Texto do banner
+      - name: about
+        field:
+          name: textarea
+          label: Sobre
     _artists:
       - name: name
         field:
