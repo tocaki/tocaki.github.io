@@ -32,12 +32,12 @@ defaults:
 prose:
   ignore:
     - /*
-    - !/_artists
-    - !/_data
-    - !/images
-    - !_config.yml
-    - !artistas.html
-    - !index.html
+    - '!/_artists'
+    - '!/_data'
+    - '!/images'
+    - '!_config.yml'
+    - '!artistas.html'
+    - '!index.html'
   metadata:
     index.html:
       - name: layout
