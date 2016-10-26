@@ -1,7 +1,6 @@
 ---
 ---
-
-callback([
+genres([
 {% for genre in site.data.genres %}
   {
     "name": "{{ genre.title }}",

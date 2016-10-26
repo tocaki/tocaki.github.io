@@ -1,7 +1,6 @@
 ---
 ---
-
-callback([
+cities([
 {% for city in site.data.cities %}
   {
     "name": "{{ city }}",
