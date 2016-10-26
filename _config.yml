@@ -39,33 +39,44 @@ prose:
       - name: name
         field:
           element: text
+          label: Nome
       - name: city
         field:
           element: text
+          label: Cidade
       - name: type
         field:
-          element: text
+          element: select
+          label: Tipo
+          options:
+            - Banda
+            - Solo
       - name: genre
         field:
           element: text
+          label: Gênero
       - name: portfolio
         field:
           element: text
+          label: Portfólio
       - name: email
         field:
           element: text
+          label: E-mail
       - name: phone
         field:
           element: text
+          label: Telefone
       - name: facebook
         field:
           element: text
-          label: Facebook username
+          label: Nome de usuário do Facebook
       - name: twitter
         field:
           element: text
-          label: Twitter username
+          label: Nome de usuário do Twitter
       - name: gplus
         field:
           element: text
-          label: Google+ username
+          label: Nome de usuário do Google+
+          help: Opcional
