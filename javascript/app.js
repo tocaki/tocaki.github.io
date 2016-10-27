@@ -23,9 +23,9 @@ $(function() {
       $.each(FILTERS, function (k, v) { tests.push(v.test($artist)); })
 
       if (tests.indexOf(false) === -1) {
-        $artist.stop().fadeIn(100);
+        $artist.parent().stop().fadeIn(100);
       } else {
-        $artist.stop().fadeOut(100);
+        $artist.parent().stop().fadeOut(100);
       }
     });
   };
