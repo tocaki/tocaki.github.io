@@ -2,7 +2,7 @@
 image: /images/artists/80-rock.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
-genre: Sertanejo
+genre: Deep House
 published: true
 title: Dj Carioca
 portfolio: www.youtube.com
