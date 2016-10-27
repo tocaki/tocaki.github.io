@@ -3,7 +3,7 @@ image: /images/artists/80-rock.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
 genre: Sertanejo
-published: false
+published: true
 title: Dj Carioca
 portfolio: www.youtube.com
 email: djcarioca@outlook.com
