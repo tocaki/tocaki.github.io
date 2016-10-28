@@ -2,7 +2,7 @@
 image: /images/artists/80-rock.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
-genre: Rock
+genre: MPB
 published: true
 title: Fernando Monteiro
 portfolio: www.fernandomonteiro.com.br
