@@ -85,10 +85,8 @@ prose:
       - name: type
         field:
           element: select
+          options: 'http://tocaki.net/beta/jsonp/types.jsonp?callback=types'
           label: Tipo
-          options:
-            - Banda
-            - Solo
       - name: genre
         field:
           element: select

@@ -1,0 +1,11 @@
+---
+---
+
+types([
+{% for type in site.data.types %}
+  {
+    "name": "{{ type }}",
+    "value": "{{ type }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+])
