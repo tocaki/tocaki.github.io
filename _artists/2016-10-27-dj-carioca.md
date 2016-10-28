@@ -2,7 +2,9 @@
 image: /images/artists/80-rock.jpg
 city: 'Belo Horizonte, MG'
 type: DJ
-genre: Deep House
+genre:
+  - Deep House
+  - House
 published: true
 title: DJ Carioca
 portfolio: 'https://soundcloud.com/dj-carioca'
