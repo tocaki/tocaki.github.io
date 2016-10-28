@@ -1,5 +1,5 @@
 ---
-image: /images/artists/80-rock.jpg
+image: /images/artists/DJ Carioca.jpg
 city: 'Belo Horizonte, MG'
 type: DJ
 genre:
