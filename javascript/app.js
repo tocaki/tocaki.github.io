@@ -46,7 +46,13 @@ $(function() {
   };
 
   ArtistFilter.prototype.test = function ($artist) {
-    return this.values.indexOf($artist.data(this.dataName)) !== -1 || this.values.length === 0;
+    var filter = this;
+    var res = $.map($artist.data(this.dataName).split(', '), function (v) {
+      if (filter.values.indexOf(v) !== -1)
+        return v;
+    });
+
+    return res.length !== 0 || this.values.length === 0;
   };
 
   $.each(FILTERS, function (k, v) { v.setupFilter(); });
