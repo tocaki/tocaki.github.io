@@ -89,7 +89,7 @@ prose:
           label: Tipo
       - name: genre
         field:
-          element: select
+          element: multiselect
           options: 'http://tocaki.net/beta/jsonp/genres.jsonp?callback=genres'
           label: Gênero
       - name: portfolio
