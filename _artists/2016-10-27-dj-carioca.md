@@ -5,9 +5,9 @@ type: Solo
 genre: Deep House
 published: true
 title: DJ Carioca
-portfolio: www.youtube.com
+portfolio: 'https://soundcloud.com/dj-carioca'
 email: djcarioca@outlook.com
-phone: '3196666666'
-facebook: barata123
+phone: '31999089321'
+facebook: profile.php?id=100003840797423&fref=ts
 ---
-Toco em festa de 15...
+Toco como DJ em eventos particulares a mais de 1 ano. Tenho experiência com Casamentos, festas de 15, formaturas, festas de faculdade, boates e bares.
