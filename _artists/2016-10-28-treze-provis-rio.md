@@ -3,7 +3,7 @@ image: /images/artists/80-rock.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
 genre: Rock
-published: false
+published: true
 title: Treze Provisório
 portfolio: 'https://youtube.com/trezeprovisorio'
 twitter: trezeprovisorio
