@@ -4,7 +4,6 @@ city: 'Belo Horizonte, MG'
 type: DJ
 genre:
   - Deep House
-  - House
 published: true
 title: DJ Carioca
 portfolio: 'https://soundcloud.com/dj-carioca'
