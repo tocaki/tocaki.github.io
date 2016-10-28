@@ -1,5 +1,5 @@
 ---
-image: /images/artists/80-rock.jpg
+image: /images/artists/Fernando Monteiro.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
 genre:
