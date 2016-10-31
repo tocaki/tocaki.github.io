@@ -6,7 +6,8 @@ genre:
   - MPB
 published: true
 title: Fernando Monteiro
-portfolio: www.fernandomonteiro.com.br
+portfolio: >-
+  http://fernandomonteiro.com.br/musica-ao-vivo-musico-banda-festa-evento-bh-videos/
 email: contato@fernandomonteiro.com.br
 facebook: fernandomonteirompb
 phone: '31988068290'
