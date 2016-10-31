@@ -2,7 +2,7 @@
 title: Tocaki
 email: contato@tocaki.net
 description: A oportunidade e visibilidade que você artista procura para crescer como profissional.
-baseurl: "/beta"
+baseurl: ""
 url: "http://tocaki.net"
 facebook: tocakinet
 instagram: tocakinet
@@ -75,17 +75,17 @@ prose:
       - name: image
         field:
           element: select
-          options: 'http://tocaki.net/beta/jsonp/avatars.jsonp?callback=avatars'
+          options: 'http://tocaki.net/jsonp/avatars.jsonp?callback=avatars'
           label: Imagem
       - name: city
         field:
           element: select
-          options: 'http://tocaki.net/beta/jsonp/cities.jsonp?callback=cities'
+          options: 'http://tocaki.net/jsonp/cities.jsonp?callback=cities'
           label: Cidade
       - name: type
         field:
           element: select
-          options: 'http://tocaki.net/beta/jsonp/types.jsonp?callback=types'
+          options: 'http://tocaki.net/jsonp/types.jsonp?callback=types'
           label: Tipo
       - name: genre
         field:
