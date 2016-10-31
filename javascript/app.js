@@ -47,7 +47,7 @@ $(function() {
 
   ArtistFilter.prototype.test = function ($artist) {
     var filter = this;
-    var res = $.map($artist.data(this.dataName).split(', '), function (v) {
+    var res = $.map($artist.data(this.dataName).split('||'), function (v) {
       if (filter.values.indexOf(v) !== -1)
         return v;
     });
