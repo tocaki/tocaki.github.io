@@ -4,6 +4,8 @@ city: 'Belo Horizonte, MG'
 type: Solo
 genre:
   - MPB
+  - POP
+  - Samba
 published: true
 title: Fernando Monteiro
 portfolio: >-
