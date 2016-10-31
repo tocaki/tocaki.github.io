@@ -1,16 +1,13 @@
-{% assign home = "/" | prepend: site.base_url %}
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   {% include head.html %}
 
-  <body class="{% if page.url == home %}home{% endif %}{% if page.layout == "page" %}page{% endif %}">
-    {% if page.layout == "page" %}{% include navbar.html %}{% endif %}
+  <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
+    {% include header.html %}
 
-    <main class="main" role="main">
-      {{ content }}
-    </main>
+    {{ content }}
 
     {% include footer.html %}
+    {% if site.ga %}{% include analytics.html %}{% endif %}
   </body>
 </html>

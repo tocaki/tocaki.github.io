@@ -1,0 +1,4 @@
+{% for genre in site.data.genres %}
+.text-genre-{{ genre.title | slugify }} { color: {{ genre.color | prepend: '#' }}; }
+.bg-genre-{{ genre.title | slugify }}   { background: {{ genre.color | prepend: '#' }}; }
+{% endfor %}

@@ -2,8 +2,8 @@
 ---
 {% capture json %}{% for file in site.static_files %}{% if file.path contains '/images/artists' %}
   {
-    "path": "{{ file.path }}",
-    "name": "{{ file.path | replace: "/images/artists/", "" }}"
+    "name": "{{ file.path | replace: "/images/artists/", "" }}",
+    "value": "{{ file.path }}"
   },
 {% endif %}{% endfor %}{% endcapture %}
 avatars([

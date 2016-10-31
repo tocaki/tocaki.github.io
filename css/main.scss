@@ -2,7 +2,61 @@
 ---
 @charset "utf-8";
 
-$primary-color: #FF2D55;
-$line-height: 1.8125rem;
+$gray-darkest:  #242038;
+$gray-dark:     #37344A;
+$gray:          #49465A;
+$gray-light:    #7A7887;
+$gray-lighter:  #E0E0E4;
+$gray-lightest: #F4F4F6;
 
-@import 'base', 'modules/home';
+$brand-primary: #FF2D55;
+$brand-success: #23CE6B;
+$brand-info:    #8338EC;
+$brand-warning: #FFA400;
+$brand-danger:  #E3170A;
+
+$spacer:   1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  5: (
+    x: ($spacer-x * 5),
+    y: ($spacer-y * 5)
+  ),
+  7: (
+    x: ($spacer-x * 7),
+    y: ($spacer-y * 7)
+  )
+);
+
+$display1-size: 10rem;
+
+$navbar-brand-padding-y: 0;
+
+$headings-font-weight: 300;
+
+$card-border-radius: 9px;
+
+@import "bootstrap/bootstrap";
+@import "base";
+@import "theme";
+@import "utils";
+@import "filter-card";
+@import "artist-card";
+@import "artist-profile";

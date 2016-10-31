@@ -1,0 +1,18 @@
+<div class="card filter-card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <h3 class="m-b-0">
+        <span class="text-primary">{% include icon.html i=include.icon %}</span> {{ include.title }}
+      </h3>
+    </li>
+    {% for item in include.items %}
+      <li class="list-group-item">
+        <label class="custom-control custom-checkbox">
+          <input type="checkbox" name="{{ include.name | append: "[]" }}" value="{{ item }}" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">{{ item }}</span>
+        </label>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

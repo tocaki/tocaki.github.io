@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="bg-faded p-y-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-lg-8 push-md-5 push-lg-4">
+        <div class="row">
+          {% for artist in site.artists %}
+            <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+              {% include artist-card.html artist=artist %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-4 pull-md-7 pull-lg-8">
+        {% include filter-card.html title="Tipo"       items=site.data.types  icon="search" name="types" %}
+        {% include filter-card.html title="Localidade" items=site.data.cities icon="marker" name="cities" %}
+        {% include filter-card.html title="Gênero"     items=site.data.genres icon="play"   name="genres" %}
+      </div>
+    </div>
+  </div>
+</div>

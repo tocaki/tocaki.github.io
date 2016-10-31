@@ -1,0 +1,13 @@
+{% assign artist = include.artist %}
+<div class="artist-card" data-genre="{{ artist.genre | join: "||" }}" data-city="{{ artist.city }}" data-type="{{ artist.type }}">
+  <a href="{{ artist.url | prepend: site.baseurl }}">
+    <img class="artist-card-img img-fluid" src="{{ artist.image | prepend: site.baseurl }}" alt="{{ artist.title }}">
+    <span class="artist-card-name text-xs-center m-b-0 p-y-1">{{ artist.title }}</span>
+  </a>
+  <span class="artist-card-badge bg-primary">
+    {% if artist.email %}{% include icon.html i="email" %}{% endif %}
+    {% if artist.phone %}{% include icon.html i="phone" %}{% endif %}
+    {% if artist.facebook %}{% include icon.html i="facebook" %}{% endif %}
+    {% if artist.twitter %}{% include icon.html i="twitter" %}{% endif %}
+  </span>
+</div>

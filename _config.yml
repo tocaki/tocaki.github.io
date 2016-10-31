@@ -1,14 +1,122 @@
 # Site settings
 title: Tocaki
 email: contato@tocaki.net
-description: >
-  Pumpkin spice black, french press bar seasonal id coffee.
-  Whipped carajillo french press doppio at latte extra half
-  and half roast aftertaste grinder aftertaste.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: A oportunidade e visibilidade que você artista procura para crescer como profissional.
+baseurl: "/beta"
 url: "http://tocaki.net"
-beta_form: "https://docs.google.com/forms/d/e/1FAIpQLSdrNreMphVy_nOVFNE4QNqTusiSQwP4Ch7VWtcj6z7pA4I3wQ/viewform?c=0&w=1"
+facebook: tocakinet
+instagram: tocakinet
+twitter: tocakinet
+blogurl: "https://tocaki.wordpress.com/"
+subscriptionurl: "https://docs.google.com/forms/d/1B8DzIIicg-w2vmNjeWBUmJNuCLXal_Ca3BTTk0UdZ68/viewform?c=0&w=1&edit_requested=true"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+gems:
+  - jekyll-sitemap
+collections:
+  artists:
+    output: true
+    permalink: /:path/
+defaults:
+  -
+    scope:
+      path: ""
+      type: artists
+    values:
+      layout: profile
+      appendtitle: true
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      image: '/images/cover.jpg'
+
+# Prose
+prose:
+  ignore:
+    - /*
+    - '!/_artists'
+    - '!/_data'
+    - '!/images'
+    - '!_config.yml'
+    - '!artistas.html'
+    - '!index.html'
+  metadata:
+    index.html:
+      - name: layout
+        field:
+          element: hidden
+          value: default
+      - name: banner_button
+        field:
+          element: text
+          label: Botão do banner
+      - name: banner_lead
+        field:
+          element: text
+          label: Texto do banner
+      - name: about
+        field:
+          element: textarea
+          label: Sobre
+    _artists:
+      - name: title
+        field:
+          element: text
+          label: title
+      - name: description
+        field:
+          element: textarea
+          label: Descrição
+          help: Máximo de 150 caracteres
+      - name: image
+        field:
+          element: select
+          options: 'http://tocaki.net/beta/jsonp/avatars.jsonp?callback=avatars'
+          label: Imagem
+      - name: city
+        field:
+          element: select
+          options: 'http://tocaki.net/beta/jsonp/cities.jsonp?callback=cities'
+          label: Cidade
+      - name: type
+        field:
+          element: select
+          options: 'http://tocaki.net/beta/jsonp/types.jsonp?callback=types'
+          label: Tipo
+      - name: genre
+        field:
+          element: multiselect
+          options: 'http://tocaki.net/beta/jsonp/genres.jsonp?callback=genres'
+          label: Gênero
+      - name: portfolio
+        field:
+          element: text
+          label: Portfólio
+      - name: email
+        field:
+          element: text
+          label: E-mail
+      - name: phone
+        field:
+          element: text
+          label: Telefone
+          help: Opcional
+      - name: facebook
+        field:
+          element: text
+          label: Nome de usuário do Facebook
+          help: Opcional
+      - name: twitter
+        field:
+          element: text
+          label: Nome de usuário do Twitter
+          help: Opcional
+      - name: gplus
+        field:
+          element: text
+          label: Nome de usuário do Google+
+          help: Opcional

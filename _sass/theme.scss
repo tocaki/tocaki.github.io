@@ -1,0 +1,16 @@
+.hero {
+  background-image:
+    linear-gradient(rgba($gray-dark, .8), rgba($gray-dark, .8)),
+    url("../images/bg.jpg");
+}
+
+.navbar.bg-inverse {
+  background-color: $gray-darkest !important;
+}
+
+.navbar-brand {
+  float: none;
+  margin-right: 0;
+  font-size: 3.5rem;
+  line-height: 1;
+}
