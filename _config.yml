@@ -9,7 +9,7 @@ instagram: tocakinet
 twitter: tocakinet
 blogurl: "https://tocaki.wordpress.com/"
 subscriptionurl: "https://docs.google.com/forms/d/1B8DzIIicg-w2vmNjeWBUmJNuCLXal_Ca3BTTk0UdZ68/viewform?c=0&w=1&edit_requested=true"
-ga: "ANALYTICS-TRACK"
+ga: "UA-86650404-1"
 
 # Build settings
 markdown: kramdown
