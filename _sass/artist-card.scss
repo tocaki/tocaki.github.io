@@ -1,6 +1,9 @@
 .artist-card {
   position: relative;
   margin-bottom: $grid-gutter-width;
+  padding-top: 100%;
+  border-radius: $card-border-radius;
+  background-color: $gray;
 }
 
 .artist-card-name {
@@ -13,6 +16,9 @@
 }
 
 .artist-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: $card-border-radius;
 }
 
