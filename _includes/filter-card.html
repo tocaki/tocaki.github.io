@@ -1,3 +1,4 @@
+{% if include.items.size > 1 %}
 <div class="card filter-card">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
@@ -16,3 +17,4 @@
     {% endfor %}
   </ul>
 </div>
+{% endif %}
