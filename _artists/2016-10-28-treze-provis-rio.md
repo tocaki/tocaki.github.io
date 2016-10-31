@@ -6,7 +6,8 @@ genre:
   - Rock
 published: true
 title: Treze Provisório
-portfolio: 'https://youtube.com/trezeprovisorio'
+portfolio: >-
+  https://play.spotify.com/artist/6Q8zDUfWAUmHteq17RXmnB?play=true&utm_source=open.spotify.com&utm_medium=open&autoplay=true
 twitter: trezeprovisorio
 facebook: trezeprovisorio
 email: contato@trezeprovisorio.com.br
