@@ -19,7 +19,7 @@ gems:
 collections:
   artists:
     output: true
-    permalink: /:path/
+    permalink: /:title
 defaults:
   -
     scope:
