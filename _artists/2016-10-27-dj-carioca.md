@@ -2,14 +2,14 @@
 image: /images/artists/DJ Carioca.jpg
 city: 'Belo Horizonte, MG'
 type: DJ
-genre:
-  - Deep House
 published: true
 title: DJ Carioca
 portfolio: 'https://soundcloud.com/dj-carioca'
 email: djcarioca@outlook.com
 phone: '31999089321'
 facebook: profile.php?id=100003840797423&fref=ts
+genre:
+  - Eletrônica
 ---
 Carioca de sangue, mas mineiro de coração, com mais de 2 anos de experiencia, Pedro Ferreira, tem experiencia com eventos particulares, como casamentos, festas de 15, formaturas, festas universitarias, além de bares e boates de BH. 
 
