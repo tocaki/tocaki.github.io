@@ -20,13 +20,13 @@ layout: default
           {% if page.facebook or page.twitter or page.gplus %}
             <div class="btn-group btn-group-lg pull-xs-right" role="group">
               {% if page.facebook %}
-                <a href="{{ page.facebook | prepend: "https://facebook.com/" }}" class="btn btn-outline-primary">{% include icon.html i="facebook" %}</a>
+                <a href="{{ page.facebook | prepend: "https://facebook.com/" }}" target="_blank" class="btn btn-outline-primary">{% include icon.html i="facebook" %}</a>
               {% endif %}
               {% if page.twitter %}
-                <a href="{{ page.twitter | prepend: "https://twitter.com/" }}" class="btn btn-outline-primary">{% include icon.html i="twitter" %}</a>
+                <a href="{{ page.twitter | prepend: "https://twitter.com/" }}" target="_blank" class="btn btn-outline-primary">{% include icon.html i="twitter" %}</a>
               {% endif %}
               {% if page.gplus %}
-                <a href="{{ page.gplus | prepend: "https://plus.google.com/" }}" class="btn btn-outline-primary">{% include icon.html i="google-plus" %}</a>
+                <a href="{{ page.gplus | prepend: "https://plus.google.com/" }}" target="_blank" class="btn btn-outline-primary">{% include icon.html i="google-plus" %}</a>
               {% endif %}
             </div>
           {% endif %}
