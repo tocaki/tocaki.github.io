@@ -12,7 +12,7 @@ portfolio: >-
   http://fernandomonteiro.com.br/musica-ao-vivo-musico-banda-festa-evento-bh-videos/
 email: contato@fernandomonteiro.com.br
 facebook: fernandomonteirompb
-phone: '31988068290'
+phone: (31) 9 8806-8290
 ---
 Cantor e compositor desde 1994, Fernando Monteiro se apresenta nas noites de BH com grandes sucessos do MPB, pop dos anos 80 e 90, reggae, samba-rock e samba.
 
