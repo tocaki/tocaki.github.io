@@ -6,7 +6,7 @@ published: true
 title: DJ Carioca
 portfolio: 'https://soundcloud.com/dj-carioca'
 email: djcarioca@outlook.com
-phone: '31999089321'
+phone: (31) 9 9908-9321
 facebook: profile.php?id=100003840797423&fref=ts
 genre:
   - Eletrônica
