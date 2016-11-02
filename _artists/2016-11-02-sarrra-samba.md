@@ -2,7 +2,7 @@
 image: /images/artists/Sarra Samba.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
-published: false
+published: true
 title: Sarrra Samba
 genre:
   - Samba
