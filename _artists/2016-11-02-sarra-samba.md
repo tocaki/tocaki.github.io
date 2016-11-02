@@ -7,6 +7,7 @@ title: Sarra Samba
 genre:
   - Samba
   - Pagode
+  - Teste
 portfolio: 'https://www.youtube.com/watch?v=SZf3JBAdz-M'
 facebook: SarrraSamba
 email: tfprates@gmail.com
