@@ -1,6 +1,11 @@
 .artist-profile-name,
 .artist-profile-city { font-weight: 100; }
 
+@include media-breakpoint-down(md) {
+  .artist-profile-name { font-size: $display4-size; }
+  .artist-profile-city { font-size: $font-size-h3; }
+}
+
 .artist-profile-img {
   border-color: inherit;
 }
