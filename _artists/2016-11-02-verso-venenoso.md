@@ -6,7 +6,6 @@ published: false
 title: Verso Venenoso
 genre:
   - Rock
-  - Teste
 portfolio: 'https://www.youtube.com/watch?v=QXiMRRu0v7E'
 facebook: versovenenoso
 email: versovenenoso1@gmail.com
