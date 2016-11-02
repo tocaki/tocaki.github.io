@@ -2,7 +2,7 @@
 image: /images/artists/Verso Venenoso.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
-published: false
+published: true
 title: Verso Venenoso
 genre:
   - Rock
