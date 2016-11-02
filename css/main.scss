@@ -54,9 +54,10 @@ $headings-font-weight: 300;
 $card-border-radius: 9px;
 
 @import "bootstrap/bootstrap";
+@import "utils";
 @import "base";
 @import "theme";
-@import "utils";
+@import "layout";
 @import "filter-card";
 @import "artist-card";
 @import "artist-profile";

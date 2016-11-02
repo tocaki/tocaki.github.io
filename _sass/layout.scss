@@ -1,0 +1,18 @@
+@include media-breakpoint-up(sm) {
+  .banner-lead {
+    font-size: $font-size-h3;
+  }
+
+  .banner-btn {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-border-radius);
+  }
+
+  .about-title { font-size: $font-size-h1; }
+  .about-subtitle { font-size: $font-size-h3; }
+}
+
+@include media-breakpoint-up(md) {
+  .about-icon {
+    margin-right: 1rem;
+  }
+}

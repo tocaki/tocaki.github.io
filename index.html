@@ -12,30 +12,32 @@ published: true
   <a href="{{ site.blogurl }}" target="_blank" class="btn btn-primary">Blog</a>
 </p>
 
-<div class="hero p-y-7 bg-cover-fixed text-primary text-xs-center">
+<div class="banner hero p-y-7 bg-cover-fixed text-primary text-xs-center">
   <p class="display-1"><span class="p-x-2 bb-2">{% include tocaki-logo.html %}</span></p>
-  <p class="h3 m-b-2">{{ page.banner_lead }}</p>
-  <p>
-    <a href="{{ "/artistas" | prepend: site.baseurl }}" class="btn btn-lg btn-outline-primary">{{ page.banner_button }}</a>
-  </p>
+  <div class="container">
+    <p class="banner-lead h4 m-b-2">{{ page.banner_lead }}</p>
+    <p>
+      <a href="{{ "/artistas" | prepend: site.baseurl }}" class="banner-btn btn btn-outline-primary">{{ page.banner_button }}</a>
+    </p>
+  </div>
 </div>
 
 <div class="p-y-5">
   <div class="container">
-    <div class="m-b-2">
-      <span class="display-3 pull-xs-left m-r-1 text-info">{% include icon.html i="play" %}</span>
-      <h2 class="h1">Você que é profissional</h2>
-      <h3 class="h3 text-muted">E aí, aonde vamos tocar hoje?</h3>
+    <div class="text-xs-center text-md-left m-b-2">
+      <span class="about-icon display-3 pull-md-left text-info">{% include icon.html i="play" %}</span>
+      <h2 class="about-title h3">Você que é profissional</h2>
+      <h3 class="about-subtitle h5 text-muted">E aí, aonde vamos tocar hoje?</h3>
       <div class="clearfix"></div>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <p class="lead">{{ page.about }}</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <p>
-          <a href="{{ site.subscriptionurl }}" target="_blank" class="btn btn-block btn-info btn-lg">{% include icon.html i="music" %} Quero participar!</a>
+          <a href="{{ site.subscriptionurl }}" target="_blank" class="about-btn btn btn-block btn-info btn-lg">{% include icon.html i="music" %} Quero participar!</a>
         </p>
       </div>
     </div>
