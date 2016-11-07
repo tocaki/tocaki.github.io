@@ -6,6 +6,7 @@ published: false
 title: Evil Matchers
 genre:
   - Rock
+  - Rap
 portfolio: 'http://www.evilmatchers.com/'
 facebook: EvilMatchers
 twitter: evilmatchers
