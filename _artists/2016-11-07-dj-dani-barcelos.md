@@ -1,5 +1,5 @@
 ---
-image: /images/artists/80-rock.jpg
+image: /images/artists/Dj Dani Barcelos.jpg
 city: 'Belo Horizonte, MG'
 type: DJ
 published: false
@@ -13,6 +13,4 @@ phone: (31) 98499-0000
 facebook: djdanibarcelos
 twitter: djdanibarcelos
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+A DJ Dani Barcelos é um dos novos talentos da cena musical em Belo Horizonte. Com seu estilo open format, promete agradar a todos os gostos e não deixar ninguém parado. Dani já tocou em casas renomadas da cidade, como o Clube Chalezinho, Bhar Savassi, Major Lock, Mix Garden, Espaço Even e Nosso Botequim, além de ser residente das festas da Giga Eventos.
