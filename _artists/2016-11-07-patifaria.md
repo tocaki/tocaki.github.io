@@ -2,7 +2,7 @@
 image: /images/artists/Patifaria.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
-published: true
+published: false
 title: Patifaria
 genre:
   - Rock
