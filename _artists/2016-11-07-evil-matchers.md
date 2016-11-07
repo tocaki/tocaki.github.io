@@ -2,7 +2,7 @@
 image: /images/artists/Evil Matchers.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
-published: false
+published: true
 title: Evil Matchers
 genre:
   - Rock
