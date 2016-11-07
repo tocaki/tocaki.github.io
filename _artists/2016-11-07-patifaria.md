@@ -7,7 +7,6 @@ title: Patifaria
 genre:
   - Rock
   - POP
-  - Rap
 portfolio: 'https: //www.youtube.com/watch?v=ovSX_tqBbj8'
 email: bandapatifariaoficial@gmail.com
 phone: (31) 99787-5509
