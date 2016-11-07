@@ -1,5 +1,5 @@
 ---
-image: /images/artists/80-rock.jpg
+image: /images/artists/Patifaria.jpg
 city: 'Belo Horizonte, MG'
 type: Banda
 published: false
@@ -12,6 +12,4 @@ email: bandapatifariaoficial@gmail.com
 phone: (31) 99787-5509
 facebook: bandapatifariaoficial
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Com repertório que passa por influências de Charlie Brown Jr., Renato Russo, Raimundos e CPM22, a banda Patifaria já se apresentou em casas renomadas de Belo Horizonte, como a Major Lock, Circus Rock Bar, Clube Chalezinho, Studio Bar e Granfinos. Além de covers, possuem músicas autorais, como "Apaixonado Por Ninguém" e "14 de Junho", que somam mais de 4 mil visualizações no Youtube.
