@@ -2,7 +2,7 @@
 image: /images/artists/beth_freitas.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
-published: true
+published: false
 title: Péricles Garcia
 genre:
   - Rock
