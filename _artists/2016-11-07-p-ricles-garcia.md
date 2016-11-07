@@ -6,7 +6,6 @@ published: true
 title: Péricles Garcia
 genre:
   - Rock
-  - Rap
 portfolio: 'https://play.spotify.com/artist/6TBRK2aO0piaq17vSCSfH9'
 facebook: periclesgarciafanpage
 twitter: pericles_garcia
