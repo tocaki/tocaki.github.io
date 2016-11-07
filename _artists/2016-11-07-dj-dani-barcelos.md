@@ -2,7 +2,7 @@
 image: /images/artists/Dj Dani Barcelos.jpg
 city: 'Belo Horizonte, MG'
 type: DJ
-published: true
+published: false
 title: DJ Dani Barcelos
 genre:
   - Eletrônica
