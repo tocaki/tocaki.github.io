@@ -6,7 +6,6 @@ published: true
 title: DJ Dani Barcelos
 genre:
   - Eletrônica
-  - Rap
 portfolio: 'https://www.youtube.com/watch?v=mTqKJmtKuGs'
 email: barcelosd951@gmail.com
 phone: (31) 98499-0000
