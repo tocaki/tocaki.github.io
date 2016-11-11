@@ -12,6 +12,4 @@ twitter: andersondionnes
 email: andersondionnes@hotmail.com
 phone: (31) 9 9992-8007
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Cantor, compositor e guitarrista com 7 albuns lançados e milhares de visualizações na internet, Anderson Dionnes se apresenta em festas e shows de todos os formatos. Em suas apresentações, possui repertório com os maiores sucessos e clássicos do rock e pop nacional e internacional, além de músicas autorais.
