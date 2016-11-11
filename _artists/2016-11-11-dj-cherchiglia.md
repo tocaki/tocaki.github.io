@@ -11,6 +11,6 @@ genre:
   - Eletrônica
 email: djcherchiglia@gmail.com
 ---
-## A New Post
+Grande promessa do cenário eletrônico, Wendel Augusto Cherchiglia iniciou sua carreira como DJ a mais de 3 anos, em Niterói, porém hoje é residente da cidade de Itajubá, já se apresentando na maior festa universitária da América Latina, do Diretório Acadêmico da UNIFEI.
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Seus estilos passam por EDM, Trap e Bass, além do Brazilian Bass, gênero consagrado na atualidade. DJ Cherchiglia toca em clubs e boates, além de festas de porte maior.
