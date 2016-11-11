@@ -2,7 +2,7 @@
 image: /images/artists/DJ Cherchiglia .jpg
 city: 'Belo Horizonte, MG'
 type: Banda
-published: false
+published: true
 title: DJ Cherchiglia
 portfolio: 'https://www.mixcloud.com/cherchiglia/'
 facebook: DJCherchiglia.br/?pnref=lhc
