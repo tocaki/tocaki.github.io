@@ -1,8 +1,8 @@
 ---
-image: /images/artists/80-rock.jpg
+image: /images/artists/dionnes 01.jpg
 city: 'Belo Horizonte, MG'
 type: Solo
-published: false
+published: true
 title: Anderson Dionnes
 portfolio: 'http://www.palcomp3.com/andersondionnes'
 genre:
