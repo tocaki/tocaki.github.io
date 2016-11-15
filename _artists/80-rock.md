@@ -5,7 +5,7 @@ city: 'Sabará, MG'
 type: Banda
 genre:
   - Rock
-portfolio: 'https://soundcloud.com/banda80rock'
+portfolio: 'https://play.spotify.com/album/6JzDvQNxefZaoyKlzAAYBe'
 twitter: banda80rock
 facebook: banda80rock
 email: banda80rock@gmail.com
