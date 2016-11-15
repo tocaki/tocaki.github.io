@@ -1,6 +1,6 @@
 ---
 title: 80 Rock
-image: /images/artists/80-rock.jpg
+image: /images/artists/80rock.jpg
 city: 'Sabará, MG'
 type: Banda
 genre:
